@@ -1,0 +1,172 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#FDFBF8;
+color:#333;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#fff;
+position:sticky;
+top:0;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:35px;
+font-family:'Cormorant Garamond',serif;
+font-weight:bold;
+color:#B8860B;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:#444;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#B8860B;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 8%;
+min-height:90vh;
+background:linear-gradient(135deg,#FFFDF8,#F8F1E8);
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero-text h1{
+font-size:65px;
+font-family:'Cormorant Garamond',serif;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+color:#666;
+}
+
+.hero-text button{
+padding:15px 35px;
+background:#B8860B;
+border:none;
+color:white;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+}
+
+.hero-text button:hover{
+background:#8B6914;
+}
+
+.hero-image{
+width:45%;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.categories{
+padding:80px 8%;
+text-align:center;
+}
+
+.categories h2{
+font-size:45px;
+font-family:'Cormorant Garamond',serif;
+margin-bottom:40px;
+}
+
+.box{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.item{
+background:white;
+padding:50px 20px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.4s;
+cursor:pointer;
+}
+
+.item:hover{
+transform:translateY(-10px);
+background:#F8F1E8;
+}
+
+.item h3{
+font-size:28px;
+font-family:'Cormorant Garamond',serif;
+color:#B8860B;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text{
+width:100%;
+}
+
+.hero-image{
+width:90%;
+margin-top:40px;
+}
+
+.box{
+grid-template-columns:1fr 1fr;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+}
+
+@media(max-width:600px){
+
+.box{
+grid-template-columns:1fr;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+}
