@@ -12,7 +12,11 @@ window.addEventListener("scroll", function () {
 
 
 // Book Appointment Button
+function bookAppointment(){
 
+alert("Appointment Booked Successfully!");
+
+}
 const btn = document.querySelector(".btn");
 
 if(btn){
@@ -85,7 +89,31 @@ observer.observe(sec);
 
 });
 
+function sendMessage(){
 
+let name =
+document.getElementById("name").value;
+
+let email =
+document.getElementById("email").value;
+
+let message =
+document.getElementById("message").value;
+
+if(name=="" || email=="" || message==""){
+
+alert("Please fill all fields");
+
+}
+
+else{
+
+alert("Thank You " + name +
+"! Message Sent Successfully.");
+
+}
+
+}
 // Contact Form
 
 const form=document.querySelector(".contact");
